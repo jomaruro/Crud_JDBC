@@ -32,10 +32,10 @@ $(document).ready(function () {
                             + "<span class='glyphicon glyphicon-trash' aria-hidden='true'></span>"
                             + "</a>"
                             + "</td>"
-                            + "</tr>")
+                            + "</tr>");
                 })
                 .fail(function (jqXHR, textStatus, errorThrown) {
                     console.log(JSON.stringify(jqXHR));
                 });
     });
-})
+});
