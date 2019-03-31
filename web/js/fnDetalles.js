@@ -73,11 +73,11 @@ $(document).ready(function () {
 
         alert("btnEditar\nNúm. Factura -> " + numFactura
                 + "\nFecha Factura -> " + fechaFactura
-                + "\norden -> " + orden
-                + "\nid_articulo -> " + id_articulo
-                + "\nnombre -> " + nombre
-                + "\ncantidad -> " + cantidad
-                + "\nprecio -> " + precio);
+                + "\nOrden -> " + orden
+                + "\nId_articulo -> " + id_articulo
+                + "\nNombre -> " + nombre
+                + "\nCantidad -> " + cantidad
+                + "\nPrecio -> " + precio);
         $.ajax({
             type: 'POST',
             url: "SDetalle?accion=editar",
@@ -93,6 +93,7 @@ $(document).ready(function () {
                 .done(function (data, textStatus, jqXHR) {
                     $('#linea' + orden).replaceWith("<tr id='linea" + orden + "'>"
                             + "<td>"
+                            + "<input type='hidden' id='id_articulo" + orden + "' name='id_articulo" + orden + "' value='"+ id_articulo + "' />"
                             + "<input type='text' class='form-control' id='nombre" + orden + "' name='nombre" + orden + "' value='" + nombre + "' readonly='readonly' />"
                             + "</td>"
                             + "<td>"
@@ -100,7 +101,6 @@ $(document).ready(function () {
                             + "</td>"
                             + "<td>"
                             + "<input class='numeros form-control' type='number' id='precio" + orden + "' name='precio" + orden + "' value='" + parseFloat(precio).toFixed(2) + "' />"
-                            + "<p>" + precio + "</p>"
                             + "</td>"
                             + "<td>"
                             + "<input type='text' class='numeros form-control' name='importe' value='" + parseFloat(cantidad * precio).toFixed(2) + "' readonly='readonly' />"

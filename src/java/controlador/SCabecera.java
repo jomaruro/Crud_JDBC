@@ -181,9 +181,12 @@ public class SCabecera extends HttpServlet {
 
                 DBArticulo dbArt = new DBArticulo();
                 List<Articulo> lstArticulo = dbArt.listaArticulos();
+                DBDetalle dbDet = new DBDetalle();
+                List<Detalle> lstDetalle = dbDet.dameDetalles(cabecera.getNumero(), cabecera.getFecha());
                 
                 ss.setAttribute("logueado", usuario);
                 ss.setAttribute("cabecera", cabecera);
+                ss.setAttribute("detalles", lstDetalle);
                 ss.setAttribute("cliente", cliente);
                 ss.setAttribute("articulos", lstArticulo);
 

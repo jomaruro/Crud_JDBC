@@ -4,6 +4,9 @@
 <%@ page import="modelo.*"%>
 <%@ page import="database.*"%>
 <%
+    DBCliente dbCli = new DBCliente();
+    Cliente cliente = new Cliente();
+    
     Cabecera cabecera = (Cabecera) session.getAttribute("cabecera");
     ArrayList<Detalle> lstDetalles = (ArrayList<Detalle>) session.getAttribute("detalles");
     ArrayList<Articulo> lstArticulos = (ArrayList<Articulo>) session.getAttribute("articulos");
@@ -42,7 +45,8 @@
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="id_cliente">Cliente</label> 
-                                <input class="form-control" type="text" id="cliente" name="cliente" value="<%=cabecera.getId_cliente()%>" readonly="readonly" />
+                                <%cliente = dbCli.dameCliente(cabecera.getId_cliente());%>
+                                <input class="form-control" type="text" id="cliente" name="cliente" value="<%=cliente.getNombre()%>" readonly="readonly" />
 
                             </div>
                         </div>
