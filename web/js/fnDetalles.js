@@ -71,13 +71,6 @@ $(document).ready(function () {
         var cantidad = $('#cantidad' + orden).val();
         var precio = $('#precio' + orden).val();
 
-        alert("btnEditar\nNúm. Factura -> " + numFactura
-                + "\nFecha Factura -> " + fechaFactura
-                + "\nOrden -> " + orden
-                + "\nId_articulo -> " + id_articulo
-                + "\nNombre -> " + nombre
-                + "\nCantidad -> " + cantidad
-                + "\nPrecio -> " + precio);
         $.ajax({
             type: 'POST',
             url: "SDetalle?accion=editar",
