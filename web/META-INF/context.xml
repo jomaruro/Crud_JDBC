@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/CrudJDBC">
+        <Resource name="jdbc/CrudJDBC" auth="Container" type="javax.sql.DataSource"
+	driverClassName="oracle.jdbc.driver.OracleDriver" factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+	url="jdbc:oracle:thin:@localhost:1521:XE" logAbandoned="true"
+	removeAbandoned="true" removeAbandonedTimeout="300"
+	username="crud_jdbc" password="crud_jdbc" maxActive="50" maxIdle="10"
+	maxWait="10000" />
+</Context>

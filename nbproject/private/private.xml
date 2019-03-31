@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/web/css/estilos.css</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/web/include/menu_bajo.jsp</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/web/include/menu_alto.jsp</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/src/java/database/DBDetalle.java</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/web/facturas/nuevaFactura.jsp</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/src/java/database/DBCabecera.java</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/web/articulos/listaArticulos.jsp</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/src/java/controlador/SDetalle.java</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/web/detalles/editaDetalles.jsp</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/web/facturas/listaHistorico.jsp</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/web/facturas/listaFacturas.jsp</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/src/java/database/DBCliente.java</file>
+            <file>file:/home/ruiz/NetBeansProjects/CrudJDBC/src/java/controlador/SCabecera.java</file>
+        </group>
+    </open-files>
+</project-private>
